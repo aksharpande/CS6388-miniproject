@@ -1,0 +1,19 @@
+{
+  "components": {
+    "seeds": {
+      "petrinets": {
+        "src": "src/seeds/petrinets"
+      }
+    },
+    "plugins": {
+      "codeGen": {
+        "src": "src/plugins/codeGen",
+        "test": "test/plugins/codeGen"
+      }
+    }
+  },
+  "dependencies": {
+    "seeds": {},
+    "plugins": {}
+  }
+}

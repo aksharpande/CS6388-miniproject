@@ -1,0 +1,58 @@
+    1  cd ~
+    2  curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
+    3  sudo apt-get install gcc g++ make
+    4  sudo apt -y install nodejs
+    5  node -v
+    6  npm -v
+    7  npm install -g webgme-cli
+    8  sudo npm install -g webgme-cli
+    9  wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
+   10  echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+   11  sudo apt-get update
+   12  sudo apt-get install -y mongodb-org
+   13  echo "mongodb-org hold" | sudo dpkg --set-selections
+   14  echo "mongodb-org-database hold" | sudo dpkg --set-selections
+   15  echo "mongodb-org-server hold" | sudo dpkg --set-selections
+   16  echo "mongodb-mongosh hold" | sudo dpkg --set-selections
+   17  echo "mongodb-org-mongos hold" | sudo dpkg --set-selections
+   18  echo "mongodb-org-tools hold" | sudo dpkg --set-selections
+   19  sudo systemctl start mongod
+   20  sudo systemctl status mongod
+   21  sudo systemctl enable mongod
+   22  mongosh
+   23  ls
+   24  git clone https://github.com/aksharpande/CS6388-miniproject.git
+   25  ls
+   26  cd CS6388-miniproject/
+   27  ls
+   28  webgme init myminiproject
+   29  cd myminiproject/
+   30  ls
+   31  webgme start
+   32  ls
+   33  grep -R mongp
+   34  grep -R mongo .
+   35  grep -R OP_QUERY .
+   36  ls
+   37  npm install
+   38  ls
+   39  node app.js 
+   40  pwd
+   41  cd ..
+   42  ls
+   43  cd ..
+   44  ls
+   45  rm -rf CS6388-miniproject/
+   46  cd /vagrant/
+   47  ls
+   48  git clone https://github.com/aksharpande/CS6388-miniproject.git
+   49  cd CS6388-miniproject/
+   50  webgme init petrinets
+   51  cd petrinets/
+   52  ls
+   53  mongod -v
+   54  mongod --version
+   55  sudo apt remove mongo
+   56  history|grep mongo
+   57  history
+   58  history > commands.txt
