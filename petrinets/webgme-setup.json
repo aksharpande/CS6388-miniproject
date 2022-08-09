@@ -10,10 +10,20 @@
         "src": "src/plugins/codeGen",
         "test": "test/plugins/codeGen"
       }
+    },
+    "visualizers": {
+      "pltview": {
+        "src": "panels/pltview/pltviewPanel",
+        "title": "pltview",
+        "panel": "src/visualizers/panels/pltview",
+        "secondary": false,
+        "widget": "src/visualizers/widgets/pltview"
+      }
     }
   },
   "dependencies": {
     "seeds": {},
-    "plugins": {}
+    "plugins": {},
+    "visualizers": {}
   }
 }

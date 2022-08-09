@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "id": "pltview",
+    "title": "pltview",
+    "panel": "panels/pltview/pltviewPanel",
+    "DEBUG_ONLY": false
+  }
+]
