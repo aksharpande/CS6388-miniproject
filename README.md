@@ -16,3 +16,6 @@ _Node 16 with npm >= 8 recommended_
 [Mongo install](https://www.mongodb.com/docs/manual/installation/)
 
 After all pre-reqs are installed and configured, the studio can be run from the [petrinets](petrinets/) directory
+
+#### Other important packages
+As the studio runs some python plugins and vizualizers you will also need to install ```make, gcc and g++```
